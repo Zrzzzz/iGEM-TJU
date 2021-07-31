@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./extension/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="./extension/bulma/bulma.sass">
+    <title>主页</title>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2cc9a2c7f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <nav class="navbar visable" role="navigation" style="top: -60px;z-index: 101;transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;position: fixed;width: 100%;">
+      <div class="navbar-brand">
+        <a href="./index.html" class="navbar-item">
+          <img src="./img/index/nav-header.png" height="40">
+        </a>
+        
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- 入口 -->
+      <div class="navbar-menu" id="navbarmenu">
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">PROJECT</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./page/description.html">DESCRIPTION</a>
+              <a class="navbar-item" href="#">EXPERIMENT</a>
+              <a class="navbar-item" href="#">IMPLEMENTATION</a>
+              <a class="navbar-item" href="#">PROOF OF CONCEPT</a>
+              <a class="navbar-item" href="#">NOTEBOOK</a>
+              <a class="navbar-item" href="#">SAFETY</a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">MODEL</a>
+            <div class="navbar-dropdown">
+              <a href="#" class="navbar-item">HH</a>
+              <a href="#" class="navbar-item">HH</a>
+              <a href="#" class="navbar-item">HH</a>
+              <a href="#" class="navbar-item">HH</a>
+            </div>
+          </div>
+          <a class="navbar-item">PARTS</a>
+          <a class="navbar-item">HP</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">TEAM</a>
+            <div class="navbar-dropdown">
+              <a href="./page/member.html" class="navbar-item">Member</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <footer class="footer" style="background-color: #1e1e1e;">
+      <div class="container">
+        <div class="columns" style="color: white;">
+          <div class="column is-half">
+            <div class="footer-title" style="vertical-align: middle;">
+              <span class="image" style="display: inline;"><img class="is-rounded" src="./img/index/nav-header.png" style="width:50px;height: 50px;display: inline;"></span>
+              <b>TAS_TAIPEI</b>
+            </div>
+            <p style="font-size:10px; margin: 20px 0;color: aliceblue;">
+              Does your institution teach an iGEM or synthetic biology course? Taipei American School teaches a year-long synthetic biology course. During the first semester, students learn synthetic biology techniques in both classroom and laboratory settings. During the second semester and over the summer, students work on their iGEM project.
+            </p>
+            <div>© TAS_TAIPEI</div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="footer-title" style="font-size: 25px;color: #989898;">
+              <span class="icon-text"><i class="fa fa-phone-alt"></i></span>
+              <span>Contact</span>
+            </div>
+            <a class="text-animate" style="font-size: 20px;letter-spacing:2px;">zrzz@tju.edu.cn</a>
+            <a class="text-animate" style="font-size: 20px;letter-spacing:2px;">+86 123 123 1234</a>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="footer-title" style="font-size: 25px;color: #989898;">
+              <span class="icon-text"><i class="fa fa-user"></i></span>
+              <span>Follow</span>
+            </div>
+            <div class="icons container">
+              <a href="#" class="s-icon s-icon-facebook">
+                <span class="icon"><i class="fa fa-facebook"></i></span>
+              </a>
+              <a href="#" class="s-icon s-icon-twitter">
+                <span class="icon"><i class="fa fa-twitter"></i></span>
+              </a>
+              <a href="#" class="s-icon s-icon-linkedin">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+              </a>
+              <a href="#" class="s-icon s-icon-youtube">
+                <span class="icon"><i class="fa fa-youtube"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    (function(){
+      let current = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+      window.onscroll = function () {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+        console.log(scrollTop, current)
+        if (scrollTop > current) {
+          $('.navbar').removeClass('visable');
+        } else {
+          $('.navbar').addClass('visable');
+        }
+        current = scrollTop;
+      }
+    }());
+  </script>
+</html>

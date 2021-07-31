@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../extension/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="../extension/bulma/bulma.sass">
+  <title>Description</title>
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/2cc9a2c7f9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <link rel="stylesheet" href="../css/member.css">
+</head>
+
+<body>
+  <nav class="navbar visable" role="navigation" style="top: -60px;z-index: 101;transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;position: fixed;width: 100%;">
+    <div class="navbar-brand">
+      <a href="../index.html" class="navbar-item">
+        <img src="../img/index/nav-header.png" height="40">
+      </a>
+      
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- 入口 -->
+    <div class="navbar-menu" id="navbarmenu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">PROJECT</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../page/description.html">DESCRIPTION</a>
+            <a class="navbar-item" href="#">EXPERIMENT</a>
+            <a class="navbar-item" href="#">IMPLEMENTATION</a>
+            <a class="navbar-item" href="#">PROOF OF CONCEPT</a>
+            <a class="navbar-item" href="#">NOTEBOOK</a>
+            <a class="navbar-item" href="#">SAFETY</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">MODEL</a>
+          <div class="navbar-dropdown">
+            <a href="#" class="navbar-item">HH</a>
+            <a href="#" class="navbar-item">HH</a>
+            <a href="#" class="navbar-item">HH</a>
+            <a href="#" class="navbar-item">HH</a>
+          </div>
+        </div>
+        <a class="navbar-item">PARTS</a>
+        <a class="navbar-item">HP</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">TEAM</a>
+          <div class="navbar-dropdown">
+            <a href="../page/member.html" class="navbar-item">Member</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    (function () {
+      let current = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+      window.onscroll = function () {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+        console.log(scrollTop, current)
+        if (scrollTop > current) {
+          $('.navbar').removeClass('visable');
+        } else {
+          $('.navbar').addClass('visable');
+        }
+        current = scrollTop;
+      }
+    }());
+  </script>
+  <div class="intro">
+    <div class="intro-container">
+      <div class="intro-logo">
+        <div class="logo1">WHO WE <br>ARE.</div>
+        <div class="logo2">ARE</div>
+      </div>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Andrew.jpeg" class="person-image is-rounded" id="person-image" />
+      </figure>
+      <div class="intro-detail">
+        <div class="member-name" id="memberName">ANDREW CHEN</div>
+        <div class="member-role" id="memberRole">Team Leader</div>
+        <div class="member-study" id="memberStudy">BSc Molecular Biology</div>
+        <div class="member-question" id="memberQuestion">What water creature are they?</div>
+        <div class="member-fun-fact" id="memberFunFact"><b>Axolotl.</b> Like an Axolotl regenerating limbs, she is capable of regenerating entire lost parts of the project without any visible scars.</div>
+      </div>
+    </div>
+    <div class="bubble-selector">
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Andrew.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Claire.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Derek.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Hannah.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Jimmy.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Joyce.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Justin.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Kelly.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Matthew.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Renee.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Tiffany.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Ting-Yu.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Tsuyoshi.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Tyler.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Vera.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+      <figure class="image">
+        <img src="../img/member/T--TAS_Taipei--Wilson.jpeg" alt="" class="is-rounded">
+        <span>LAB</span>
+      </figure>
+    </div>
+    <script>
+      $('.bubble-selector figure').on('click', function(e) {
+        let that = $(this);
+        if (that.children('img').attr('src') === $('#person-image').attr('src')) {
+          return;
+        }
+        $('#person-image').animate({opacity: 'toggle'},"slow",null, function(){
+          $('#person-image').attr('src', that.children('img').attr('src'))
+          $("#person-image").animate({opacity:'toggle'},"slow");
+        })
+        $('#memberName').text('Claire wei')
+        $('#memberRole').text('Team member')
+        $('#memberFunFact').html('<b>Lorem ipsum</b>.dolor sit amet, consectetur adipisicing elit. Suscipit quia commodi vero sint omnis fugiat excepturi reiciendis necessitatibus totam asperiores, delectus saepe nulla consequuntur nostrum! Saepe suscipit recusandae repellendus assumenda.')
+      })
+    </script>
+  </div>
+  <div class="detail">
+    <div>
+      <div class="advisor-title">
+        ADVISORS
+      </div>
+      <div class="advisor-title" style="color: transparent;line-height:0;-webkit-text-stroke: 2px #A8D8B9;top: -25px;position: relative;z-index: -1;">
+        ADVISORS
+      </div>
+    </div>
+    <div class="advisors" style="width: 80vw;display: flex;align-items: center;margin: auto;justify-content: space-around;margin-top: 20px;">
+      <div class="advisor">
+        <figure class="image"><img src="../img/member/advi-Hsu.jpeg" alt="" class="is-rounded"></figure>
+        <div class="content">
+          <h1>Dr. Jonathan Hsu</h1>
+          <p>Dr. Hsu strives to give excellent care to his patients by providing open communication and individualized treatment. He makes every effort to provide evidence-based care while also striving to ensure patient satisfaction.</p>
+        </div>
+      </div>
+      <div class="advisor">
+        <figure class="image"><img src="../img/member/advi-Ward.jpeg" alt="" class="is-rounded"></figure>
+        <div class="content">
+          <h1>Dr. Nicholas Ward</h1>
+          <p>Fellowship, NYU School of Medicine, Hematopathology, 2018<br>
+            Residency, Beaumont Hospital (Royal Oak), Anatomic & Clinical Pathology, 2017<br>
+            MD from Wayne State University, 2013</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="advisor-title" style="float: right;margin-right: 10vw;">
+        ABOUT US
+      </div>
+      <div class="advisor-title" style="color: transparent;-webkit-text-stroke: 2px #A8D8B9;z-index: -1;right: 10vw;float: right;position: absolute;margin-top: 5px;">
+        ABOUT US
+      </div>
+    </div>
+    <div class="detail-about">
+      <div class="content">
+        <h1>school</h1>
+        <div class="columns">
+          <div class="column">
+            <p>Taipei American School is an independent school with an American-based curriculum located in Tianmu, Shilin District, Taipei City. TAS strives to stay ahead of the curve in STEAM education. An important aspect of STEAM education is the 'E': Engineering. Our iGEM team represents the application of engineering beyond robotics.</p>
+          </div>
+          <div class="column is-4">
+            <img src="../img/member/school.jpeg">
+          </div>
+        </div>      
+      </div>
+      <div class="content">
+        <h1>lab</h1>
+        <div class="columns">
+          <div class="column is-4">
+            <img src="../img/member/lab.jpeg">
+          </div>
+          <div class="column">
+            <p>We work in the Sandy R. Puckett Memorial Research Lab, which was completely renovated in 2020 to provide a state-of-the-art research laboratory for on-campus student research in chemistry, biology, physics, synthetic biology, and nanotechnology. It is fully equipped for molecular biological and biochemistry research. The students have the opportunity to be creative and exploratory in many areas of scientific research at TAS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

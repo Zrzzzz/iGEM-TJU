@@ -1,0 +1,131 @@
+
+$indexWhite: #989898;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.xnav {
+    background-color: white;
+}
+
+.footer {
+    flex: 0 0 auto;
+    .footer-title {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.text-animate{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+.text-animate:hover {
+    color: $indexWhite;
+}
+
+.text-animate::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: $indexWhite;
+    height: 2px;
+    transition-property: left,right;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.text-animate:hover::before {
+    left: 0;
+    right: 0;
+}
+.icons.container {
+    display: flex;
+    justify-content: space-around;
+    a {
+        width: 40px;
+        height: 40px;
+        border:2px solid;
+        border-radius:20px;
+        color: #979da4;
+        background: #f3f4f5;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .icon {
+            z-index: 2;
+        }
+    }
+    a:hover { color: white; }
+    .s-icon-facebook::before {
+        background: #3b5998;
+    }
+    .s-icon-twitter::before {
+        background: #1da1f2;
+    }
+    .s-icon-linkedin::before {
+        background: #007bb5;
+    }
+    .s-icon-youtube::before {
+        background: red;
+    }
+}
+
+.s-icon:hover {
+    color: $indexWhite;
+}
+
+.s-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition: transform .15s ease-out,-webkit-transform .15s ease-out;
+}
+.s-icon:hover::before {
+    transform: scaleY(1);
+}
+.navbar {
+    box-shadow: 0 0 10px lightgrey;
+    flex: 0 0 auto;
+
+}
+.visable {
+    top: 0;
+    transition: all 0.5s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
