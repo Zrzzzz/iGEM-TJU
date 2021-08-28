@@ -14,51 +14,32 @@
 </head>
 
 <body>
-  <nav class="navbar visable" role="navigation" style="top: -60px;z-index: 101;transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;position: fixed;width: 100%;">
-    <div class="navbar-brand">
-      <a href="../index.html" class="navbar-item">
-        <img src="../img/index/nav-header.png" height="40">
-      </a>
-      
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <!-- 入口 -->
-    <div class="navbar-menu" id="navbarmenu">
-      <div class="navbar-end">
+  <nav class="navbar visable is-black role=" navigation"
+    style="top: -60px;z-index: 101;transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;position: fixed;width: 100%;">
+    <span style="margin: 0 auto;">
+      <div class="navbar-menu" id="navbarmenu">
+        <a href="../index.html" class="navbar-item">
+          <img src="../img/index/nav-header.png" height="40">
+        </a>
+        <a class="navbar-item" href="../index.html">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">PROJECT</a>
+          <a class="navbar-link is-arrowless">Project</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="../page/description.html">DESCRIPTION</a>
-            <a class="navbar-item" href="#">EXPERIMENT</a>
-            <a class="navbar-item" href="#">IMPLEMENTATION</a>
-            <a class="navbar-item" href="#">PROOF OF CONCEPT</a>
-            <a class="navbar-item" href="#">NOTEBOOK</a>
-            <a class="navbar-item" href="#">SAFETY</a>
+            <a class="navbar-item" href="./description.html">Description</a>
+            <a class="navbar-item" href="#">Design</a>
+            <a class="navbar-item" href="#">Engineering</a>
+            <a class="navbar-item" href="#">Implementation</a>
           </div>
         </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">MODEL</a>
-          <div class="navbar-dropdown">
-            <a href="#" class="navbar-item">HH</a>
-            <a href="#" class="navbar-item">HH</a>
-            <a href="#" class="navbar-item">HH</a>
-            <a href="#" class="navbar-item">HH</a>
-          </div>
-        </div>
-        <a class="navbar-item">PARTS</a>
-        <a class="navbar-item">HP</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">TEAM</a>
-          <div class="navbar-dropdown">
-            <a href="../page/member.html" class="navbar-item">Member</a>
-          </div>
-        </div>
+        <a class="navbar-item">Parts</a>
+        <a class="navbar-item">Model</a>
+        <a class="navbar-item">Human Practice</a>
+        <a class="navbar-item" href="team.html">Team</a>
+        <a class="navbar-item">Judging</a>
       </div>
-    </div>
+    </span>
+    <!-- 入口 -->
+
   </nav>
   <div style="vertical-align: middle;background-image: url(../img/description/T--TAS_Taipei--Description_big.jpg);">
     <div class="intro-1">DESCRIPTION</div>
@@ -70,11 +51,12 @@
     </script>
   </div>
   <progress class="progress" value="0" max="100"
-    style="width: 100px;height:12px;transform-origin: top left;transform:rotate(90deg);position: fixed;left: 50px;"></progress>
+    style="width: 100px;height:12px;transform-origin: top left;transform:rotate(90deg);position: fixed;left: 50px; "></progress>
 
   <div class="columns">
     <div class="column is-3 index-column" style="margin: 60px;">
-      <b onclick="$('html, body').animate({scrollTop:0}, 'slow')" href="#" style="cursor: pointer;margin-top: 50px;">DESCRIPTION</b>
+      <b onclick="$('html, body').animate({scrollTop:0}, 'slow')" href="#"
+        style="cursor: pointer;margin-top: 50px;">DESCRIPTION</b>
       <ul class="title-nav">
         <li class="active">
           <div></div>
@@ -297,6 +279,12 @@
           </ol>
         </div>
       </div>
+    </div>
+    <div class="column is-1 index-column">
+      <span class="up-arrow" onclick="$('html, body').animate({scrollTop:0}, 'slow')" style="cursor: pointer;">
+        <span class="up-arrow-bg" style="margin-top: 120px;"></span>
+        <img class="up-arrow-icon" src="../img/description/arrow.png"  style="margin-top: 130px;"/>
+      </span>
     </div>
   </div>
   <!-- 滚动进度条 -->

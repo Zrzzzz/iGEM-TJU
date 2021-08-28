@@ -14,52 +14,34 @@
 </head>
 
 <body>
-  <nav class="navbar visable" role="navigation" style="top: -60px;z-index: 101;transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;position: fixed;width: 100%;">
-    <div class="navbar-brand">
-      <a href="../index.html" class="navbar-item">
-        <img src="../img/index/nav-header.png" height="40">
-      </a>
-      
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <!-- 入口 -->
-    <div class="navbar-menu" id="navbarmenu">
-      <div class="navbar-end">
+  <nav class="navbar visable is-black role=" navigation"
+    style="top: -60px;z-index: 101;transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;position: fixed;width: 100%;">
+    <span style="margin: 0 auto;">
+      <div class="navbar-menu" id="navbarmenu">
+        <a href="../index.html" class="navbar-item">
+          <img src="../img/index/nav-header.png" height="40">
+        </a>
+        <a class="navbar-item">Home</a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">PROJECT</a>
+          <a class="navbar-link is-arrowless">Project</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="../page/description.html">DESCRIPTION</a>
-            <a class="navbar-item" href="#">EXPERIMENT</a>
-            <a class="navbar-item" href="#">IMPLEMENTATION</a>
-            <a class="navbar-item" href="#">PROOF OF CONCEPT</a>
-            <a class="navbar-item" href="#">NOTEBOOK</a>
-            <a class="navbar-item" href="#">SAFETY</a>
+            <a class="navbar-item" href="./page/description.html">Description</a>
+            <a class="navbar-item" href="#">Design</a>
+            <a class="navbar-item" href="#">Engineering</a>
+            <a class="navbar-item" href="#">Implementation</a>
           </div>
         </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">MODEL</a>
-          <div class="navbar-dropdown">
-            <a href="#" class="navbar-item">HH</a>
-            <a href="#" class="navbar-item">HH</a>
-            <a href="#" class="navbar-item">HH</a>
-            <a href="#" class="navbar-item">HH</a>
-          </div>
-        </div>
-        <a class="navbar-item">PARTS</a>
-        <a class="navbar-item">HP</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">TEAM</a>
-          <div class="navbar-dropdown">
-            <a href="../page/member.html" class="navbar-item">Member</a>
-          </div>
-        </div>
+        <a class="navbar-item">Parts</a>
+        <a class="navbar-item">Model</a>
+        <a class="navbar-item">Human Practice</a>
+        <a class="navbar-item">Team</a>
+        <a class="navbar-item">Judging</a>
       </div>
-    </div>
+    </span>
+    <!-- 入口 -->
+
   </nav>
+  
   <script>
     (function () {
       let current = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度

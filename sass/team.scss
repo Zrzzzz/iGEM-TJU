@@ -1,0 +1,54 @@
+@import 'description.scss';
+
+
+h1.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.row-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .image-item {
+        width: 20%;
+        .intro {
+            font-size: 32px;
+            text-align: center;
+        }
+        
+        .image {
+            margin: auto;
+        }
+    }
+}
+
+.col-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .image-item {
+        .image {
+            display: inline-block;
+            margin: auto;
+            width: 80%;
+        }
+        
+        .intro {
+            margin: auto;
+            margin-left: 20px;
+
+            .intro-name {
+                font-size: 32px;
+            }
+            
+            .intro-content {
+                font-size: 24px;
+            }
+        }
+        
+    }
+}

@@ -36,7 +36,7 @@
     }
     li.active {
         div {
-            background-color: #2E64EC;
+            background-color: #F1AEA5;
         }
     }
     li {
@@ -53,7 +53,7 @@
             max-height: 15px;
             box-sizing: border-box;
             border: 1px solid;
-            color: #2E64EC;
+            color: #F1AEA5;
             border-radius: 20px;
             transition: 0.5s;
             margin-right: 10px;
@@ -85,13 +85,38 @@
     vertical-align: super;
 }
 .progress::-webkit-progress-value {
-    background-color: rgba($color: #2E64EC, $alpha: 1.0)
+    background-color: rgba($color: #1F2437, $alpha: 1.0)
 }
 
 .progress::-moz-progress-bar {
-    background-color:rgba($color: #2E64EC, $alpha: 1.0)
+    background-color:rgba($color: #1F2437, $alpha: 1.0)
 }
 
 .progress::-ms-fill {
-    background-color:rgba($color: #2E64EC, $alpha: 1.0)
+    background-color:rgba($color: #1F2437, $alpha: 1.0)
 }
+
+.up-arrow {
+    margin-top: 300px;
+    margin-left: 40px;
+    width: 60px;
+    height: 60px;
+
+
+    .up-arrow-bg {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #8C99CD;
+        z-index: -1;
+    }
+    .up-arrow-icon {
+        margin-left: 10px;
+        position: absolute;
+        transform: rotate(180deg);
+        width: 40px;
+        height: 40px;
+    }
+}
+
