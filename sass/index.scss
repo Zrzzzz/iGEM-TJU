@@ -116,10 +116,32 @@ $indexWhite: #989898;
     transform: scaleY(1);
 }
 .navbar {
-    box-shadow: 0 0 10px lightgrey;
-    flex: 0 0 auto;
+    // box-shadow: 0 0 10px lightgrey;
+    // flex: 0 0 auto;
+    // top: -60px;
+    // position: relative;
+    z-index: 101;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    // position: fixed;
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2437;
+
+    .navbar-item {
+        color: gray;
+    }
+
+    .navbar-link {
+        color: gray;
+    }
 
 }
+
+
 .visable {
     top: 0;
     transition: all 0.5s;

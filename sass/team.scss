@@ -3,7 +3,7 @@
 
 h1.title {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -15,7 +15,7 @@ h1.title {
     .image-item {
         width: 20%;
         .intro {
-            font-size: 32px;
+            font-size: 21px;
             text-align: center;
         }
         
@@ -42,13 +42,21 @@ h1.title {
             margin-left: 20px;
 
             .intro-name {
-                font-size: 32px;
+                font-size: 24px;
             }
             
             .intro-content {
-                font-size: 24px;
+                font-size: 21px;
             }
         }
         
     }
+}
+
+#members {
+    height: 400px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: gray;
+    margin: auto;
 }

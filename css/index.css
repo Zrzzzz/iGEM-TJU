@@ -147,11 +147,30 @@
 }
 
 .navbar {
-  -webkit-box-shadow: 0 0 10px lightgrey;
-          box-shadow: 0 0 10px lightgrey;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  z-index: 101;
+  -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1F2437;
+}
+
+.nav-bar .navbar-item {
+  color: gray;
+}
+
+.nav-bar .navbar-link {
+  color: gray;
 }
 
 .visable {
