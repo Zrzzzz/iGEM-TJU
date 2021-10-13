@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'BerlinSansFB-Reg';
+  src: url("/css/font/BerlinSansFBRegular.eot");
+  src: local("BerlinSansFB-Reg"), url("/css/font/BerlinSansFBRegular.ttf") format("truetype"), url("/css/font/BerlinSansFBRegular.svg#BerlinSansFBRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'Ubuntu-B';
+  src: url("/css/font/Ubuntu-B.eot");
+  src: local("BerlinSansFB-Reg"), url("/css/font/Ubuntu-B.ttf") format("truetype"), url("/css/font/Ubuntu-B.svg#Ubuntu-B") format("svg");
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -167,6 +179,7 @@
 
 .nav-bar .navbar-item {
   color: gray;
+  margin-right: 50px !important;
 }
 
 .nav-bar .navbar-link {
@@ -179,6 +192,47 @@
   transition: all 0.5s;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
+}
+
+.welcome {
+  font-size: 100px;
+  text-align: center;
+  font-family: Ubuntu-B;
+  font-weight: bold;
+  color: #1F2437;
+  margin: 50px 0;
+}
+
+.section {
+  height: 600px;
+  font-family: BerlinSansFB-Reg;
+  color: black;
+}
+
+.section .columns {
+  width: 78%;
+  margin: auto;
+}
+
+.small-section {
+  height: 100px;
+}
+
+.medium-section {
+  height: 250px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.medium-section .content {
+  font-size: 24px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  width: 60%;
 }
 
 .image {

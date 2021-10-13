@@ -1,0 +1,25 @@
+@import './description.scss';
+
+h1.title {
+   font-weight: bold; 
+   text-align: center;
+}
+
+
+.j-section {
+    width: 954px;
+    height: 455px;
+    border-radius: 30px;
+    margin: 30px 0;
+
+    .imgbox {
+        width: 100%;
+        margin: auto;
+
+
+        img {
+            display: block; 
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'BerlinSansFB-Reg';
+  src: url("/css/font/BerlinSansFBRegular.eot");
+  src: url("/css/font/BerlinSansFBRegular.ttf") format("truetype"), url("/css/font/BerlinSansFBRegular.svg#BerlinSansFBRegular") format("svg");
+}
+
+@font-face {
+  font-family: 'zcool';
+  src: url("/css/font/zcool-gdh.eot");
+  src: url("/css/font/zcool-gdh.ttf") format("truetype"), url("/css/font/zcool-gdh.svg#zcool-gdh") format("svg");
+}
+/*# sourceMappingURL=font.css.map */

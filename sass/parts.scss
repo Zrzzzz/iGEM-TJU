@@ -1,0 +1,99 @@
+@import 'description.scss';
+
+body#description {
+    .center-title {
+        text-align: center;
+        font-size: 29px !important;
+        font-weight: bold;
+        color: black !important;
+        margin: 30px 0;
+    }
+
+    .overview {
+        margin: 20px 0;
+        height: max-content;
+        border: 2px solid #D7DAE3;
+        border-radius: 10px;
+        padding: 15px 30px;
+    }
+
+    table.table {
+        thead {
+            th {
+                font-weight: bold;
+            }
+        }
+
+        
+        tbody {
+            td {
+                font-size: 16px;
+                color: #6B6B6B;
+                text-align: right;
+            }
+            tr {
+                td:nth-child(1) {
+                    text-align: center;
+                }
+            }
+
+            tr:nth-child(1) {
+                td:nth-child(1) > div {
+                    font-size: 16px;
+                    
+                    width: 1.2em;
+                    height: 1.2em;
+                    box-sizing: initial;
+                
+                    background:#FDD36080;
+                    color: #EBBA0F;
+                    text-align: center;
+                    border-radius: 50%;    
+                
+                    line-height: 1.2em;
+                    box-sizing: content-box;   
+                    margin: auto;
+                }
+            }
+
+            tr:nth-child(2) {
+                td:nth-child(1) > div {
+                    font-size: 16px;
+                    
+                    width: 1.2em;
+                    height: 1.2em;
+                    box-sizing: initial;
+                
+                    background: #CDEDEA80;
+                    color: #78A7A1;
+                    text-align: center;
+                    border-radius: 50%;    
+                
+                    line-height: 1.2em;
+                    margin: auto;
+                    box-sizing: content-box;   
+                }
+            }
+
+            tr:nth-child(3) {
+                td:nth-child(1) > div {
+                    font-size: 16px;
+                    
+                    width: 1.2em;
+                    height: 1.2em;
+                    box-sizing: initial;
+                
+                    background:#EC9F4D80;
+                    color: #B36B1E;
+                    text-align: center;
+                    border-radius: 50%;    
+                
+                    line-height: 1.2em;
+                    margin: auto;
+                    box-sizing: content-box;   
+                }
+            }
+        }
+
+    }
+}

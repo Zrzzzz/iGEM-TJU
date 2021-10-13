@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/extension/bulma/css/bulma.css">
+    <title>Description</title>
+    <script src="/extension/jquery.min.js"></script>
+    <script src="/extension/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="/css/description.css">
+</head>
+
+<nav class="nav-bar" role="navigation" aria-label="main navigation">
+    <a href="/Team:TJUSLS_China/index" class="navbar-item" style="margin-right: 50px !important;">
+        <img src="/wiki/images/f/fd/nav-header.png" height="40">
+    </a>
+    <a class="navbar-item" href="/Team:TJUSLS_China/index">Home</a>
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-arrowless">Project</a>
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/Team:TJUSLS_China/Description">Description</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Design">Design</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Engineering">Engineering</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Experiments">Experiments</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Implementation">Implementation</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Contribution">Contribution</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Notebook">Notebook</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Safety">Safety</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Results">Results</a>
+        </div>
+    </div>
+    <a class="navbar-item" href="/Team:TJUSLS_China/Parts">Parts</a>
+    <a class="navbar-item" href="/Team:TJUSLS_China/Model">Model</a>
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-arrowless">Human Practices</a>
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/Team:TJUSLS_China/Human_Practices">Intergrated Human Practices</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Communication">Communication</a>
+        </div>
+    </div>
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-arrowless">Team</a>
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/Team:TJUSLS_China/Team">Team members</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Attributions">Attribution</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Collaborations">Collaboration</a>
+            <a class="navbar-item" href="/Team:TJUSLS_China/Partnership">Partnership</a>
+        </div>
+    </div>
+    <a class="navbar-item" href="/Team:TJUSLS_China/Judging">Judging</a>
+</nav>
+
+<body>
+
+
+    <div style="vertical-align: middle;background-image: url(../img/description/T--TAS_Taipei--Description_big.jpg);">
+        <div class="intro-1">DESCRIPTION</div>
+        <div class="intro-2">DESCRIPTION</div>
+        <script>
+            new SmoothScroll('a[href*="#"]', {
+                easing: 'easeInOutQuart'
+            });
+        </script>
+    </div>
+    <progress class="progress" value="0" max="100"
+        style="width: 100px;height:12px;transform-origin: top left;transform:rotate(90deg);position: fixed;left: 50px; "></progress>
+
+    <div class="tju-columns">
+        <div class="tju-column is-3 index-column" style="margin: 60px;">
+            <b onclick="$('html, body').animate({scrollTop:0}, 'slow')" href="#"
+                style="cursor: pointer;margin-top: 50px;">DESCRIPTION</b>
+            <ul class="title-nav">
+                <li class="active">
+                    <div></div>
+                    <a href="#title1">BACKGROUND</a>
+                </li>
+                <li>
+                    <div></div>
+                    <a href="#title2">CURRENT SOLUTIONS</a>
+                </li>
+                <li>
+                    <div></div>
+                    <a href="#title3">OUR GOAL</a>
+                </li>
+                <li>
+                    <div></div>
+                    <a href="#title4">THE BIGGER PICTURE</a>
+                </li>
+                <li>
+                    <div></div>
+                    <a href="#title5">REFERENCES</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tju-column">
+            <div class="content">
+                <div class="paragragh" style="height: 800px;">
+                    <h1 id="title1">Description</h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="tju-column is-3 index-column">
+            <span class="up-arrow" onclick="$('html, body').animate({scrollTop:0}, 'slow')" style="cursor: pointer;">
+                <span class="up-arrow-bg" style="margin-top: 120px;"></span>
+                <img class="up-arrow-icon" src="/img/description/arrow.png" style="margin-top: 130px;" />
+            </span>
+        </div>
+    </div>
+    <!-- 滚动进度条 -->
+    <script>
+        (function () {
+            let current = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+            let pageHeight = document.body.scrollHeight || document.documentElement.scrollHeight; // 页面总高度
+            let windowHeight = document.documentElement.clientHeight || document.body.clientHeight; // 浏览器视口高度
+            let scrollAvail = pageHeight - windowHeight; // 可滚动的高度
+            var timeoutId;
+            console.log('可滚动的高度：', scrollAvail);
+            window.onscroll = function () {
+                let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;  // 获取滚动条的高度
+                console.log('滚动条的高度：', scrollTop);
+                $('.progress').val(scrollTop / scrollAvail * 100);    // 计算占比
+                $('.progress').fadeIn();
+                if (timeoutId !== undefined) {
+                    clearTimeout(timeoutId);
+                }
+                timeoutId = setTimeout(() => {
+                    $('.progress').fadeOut()
+                }, 2000);
+                // 顶部栏动态
+                if (scrollTop > current) {
+                    $('.navbar').removeClass('visable');
+                } else {
+                    $('.navbar').addClass('visable');
+                }
+                current = scrollTop;
+            };
+            window.onload = function () {
+                console.log('load')
+                $('.progress').css({
+                    position: 'fixed',
+                    width: $(window).height() / 3,
+                    top: ($(window).height() - $(window).height() / 3) / 2,
+                }).fadeOut();
+            };
+            window.onloadstart = function () {
+                console.log('start')
+                $('.progress').css({
+                    position: 'fixed',
+                    width: $(window).height() / 3,
+                    top: ($(window).height() - $(window).height() / 3) / 2,
+                }).fadeOut();
+            }
+            window.onresize = function () {
+                $('.progress').css({
+                    position: 'fixed',
+                    width: $(window).height() / 3,
+                    top: ($(window).height() - $(window).height() / 3) / 2,
+                }).fadeIn();
+                setTimeout(() => {
+                    $('.progress').fadeOut()
+                }, 3000)
+            };
+        }());
+
+    </script>
+    <!-- 锚点定位 -->
+    <script>
+        var $navs = $('.title-nav li'),          // 导航
+            $sections = $('.content div'),       // 模块
+            $window = $(window),
+            navLength = $navs.length - 1;
+
+        $window.on('scroll', function () {
+            var scrollTop = $window.scrollTop(),
+                len = navLength;
+
+            for (; len > -1; len--) {
+                var that = $sections.eq(len);
+                if (scrollTop >= that.offset().top) {
+                    $navs.removeClass('active').eq(len).addClass('active');
+                    break;
+                }
+            }
+        });
+    </script>
+</body>
+
+
+<script type="text/javascript">
+    (function () {
+        $("#top_title").remove();
+    }());
+</script>
+
+</html>

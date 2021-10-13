@@ -1,5 +1,7 @@
+@import './font.scss';
+@import './bulma.scss';
 
-$indexWhite: #989898;
+$indexWhite: hsl(0, 0%, 60%);
 
 * {
     margin: 0px;
@@ -14,9 +16,6 @@ $indexWhite: #989898;
     width: 100%;
 }
 
-.xnav {
-    background-color: white;
-}
 
 .footer {
     flex: 0 0 auto;
@@ -30,7 +29,7 @@ $indexWhite: #989898;
     flex: 1 0 auto;
 }
 
-.text-animate{
+.text-animate {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -61,60 +60,7 @@ $indexWhite: #989898;
     left: 0;
     right: 0;
 }
-.icons.container {
-    display: flex;
-    justify-content: space-around;
-    a {
-        width: 40px;
-        height: 40px;
-        border:2px solid;
-        border-radius:20px;
-        color: #979da4;
-        background: #f3f4f5;
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        .icon {
-            z-index: 2;
-        }
-    }
-    a:hover { color: white; }
-    .s-icon-facebook::before {
-        background: #3b5998;
-    }
-    .s-icon-twitter::before {
-        background: #1da1f2;
-    }
-    .s-icon-linkedin::before {
-        background: #007bb5;
-    }
-    .s-icon-youtube::before {
-        background: red;
-    }
-}
 
-.s-icon:hover {
-    color: $indexWhite;
-}
-
-.s-icon::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    -webkit-transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
-    transform: scaleY(0);
-    transform-origin: 50% 100%;
-    transition: transform .15s ease-out,-webkit-transform .15s ease-out;
-}
-.s-icon:hover::before {
-    transform: scaleY(1);
-}
 .navbar {
     // box-shadow: 0 0 10px lightgrey;
     // flex: 0 0 auto;
@@ -150,4 +96,281 @@ $indexWhite: #989898;
     -o-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+}
+
+
+
+.tju-section {
+    padding: 3rem 1.5rem;
+    // height: 1300px;
+    height: 100vh;
+    font-family: BerlinSansFB-Reg;
+    color: black;
+
+    .tju-columns {
+        width: 78%;
+        margin: auto;
+        height: 100%;
+
+        .tju-column {
+            margin: auto;
+        }
+    }
+}
+
+.small-section {
+    height: 219px;
+}
+
+.medium-section {
+    height: 415px;
+    text-align: center;
+    display: flex;
+    .content {
+        font-size: 24px;
+        height: fit-content;
+        margin: auto;
+        width: 60%;
+        font-family: 'BerlinSansFB-Reg';
+    }
+}
+
+
+body#index {
+
+    .welcome {
+    font-size: 130px;
+    text-align: center;
+    font-family: zcool;
+    color: #1F2437;
+    position: absolute;
+    z-index: 1;
+}
+    .image-container {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-container > * {
+        position: absolute;
+        z-index: 3;
+    }
+    .pet-intro > * {
+        position: absolute;
+    }
+    .pet-intro {
+        z-index: 4;
+        font-family: 'BerlinSansFB-Reg';
+        text-align: center;
+        color: #1F2437 !important;
+        font-size: 30px !important;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        // width: 100%;
+        // height: 100%;
+        #t1 {
+            margin-left: -35vh;
+            margin-top: -45vh;
+            transform: rotate(-45deg);
+        }
+    
+        #t2 {
+            margin-left: 40vh;
+            margin-top: -33vh;
+            transform: rotate(55deg);
+        }
+    
+        #t3 {
+            margin-left: -18vh;
+            margin-top: 53vh;
+            transform: rotate(37deg);
+            width: max-content;
+        }
+    }
+    
+    
+    #p38c {
+        margin-top: 8vh;
+        margin-left: -50vh;
+        z-index: 5;
+        transform: scale(0.8);
+    }
+    #pxb3 {
+        margin-left: -30vh;
+        transform: scale(0.7);
+        z-index: -1;
+    }
+    
+    #pss3 {        
+        z-index: 1;
+        // transform: scale(0.8);
+        height: 80vh;
+    }
+
+    #p20 {
+        height: 35vh;
+        margin-top: -20vh;
+        margin-left: -4vh;
+    }
+
+    #p21 {
+        height: 24vh;
+        margin-top: 5vh;
+        margin-left: -20vh;
+    }
+
+    #p22 {
+        height: 23vh;
+        margin-top: 5vh;
+        margin-left: 15vh;
+    }
+
+    #p39 {
+        height: 18vh;
+        margin-top: 20vh;
+        margin-left: 5vh;
+    }
+    #pxb2 {
+        height: 75vh;
+    }
+
+    #p35 {
+        height: 30vh;
+        margin-top: -3vh;
+        margin-left: -12vh;
+    }
+
+    #p36 {
+        height: 30vh;
+        margin-top: 4vh;
+        margin-left: 10vh;
+    }
+    #p36 {
+        height: 30vh;
+        margin-top: 4vh;
+        margin-left: 10vh;
+    }
+
+    #p45 {
+        height: 20vh;
+        margin-top: 12vh;
+    }
+
+    #p44 {
+        height: 25vh;
+        margin-top: 35vh;
+        margin-left: -38vh;
+    }
+
+    #p1 {
+        height: 30vh;
+        margin-top: 40vh;
+    }
+
+    #p42 {
+        height: 25vh;
+        margin-top: 35vh;
+        margin-left: 38vh;
+    }
+
+    #p9 {
+        height: 65vh;
+    }
+
+    #p30 {
+        height: 18vh;
+        margin-top: -21vh;
+        margin-left: 10vh;
+    }
+
+    #p33 {
+        height: 18vh;
+        margin-top: 2vh;
+        margin-left: -15vh;
+    }
+
+    #p34 {
+        height: 20vh;
+        margin-top: 18vh;
+        margin-left: 13vh;
+    }
+
+    #p32 {
+        height: 50vh;
+    }
+
+    #p26 {
+        height: 20vh;
+        margin-top: -20vh;
+        margin-left: -10vh;
+    }
+
+    #p27 {
+        height: 24vh;
+        margin-top: -10vh;
+        margin-left: 0vh;
+    }
+
+    #p28 {
+        height: 18vh;
+        margin-top: 0vh;
+        margin-left: 11vh;
+    }
+
+    #p29 {
+        height: 12vh;
+        margin-top: 4vh;
+        margin-left: 22vh;
+    }
+
+    #p5 {
+        height: 75vh;
+    }
+
+    #p38 {
+        height: 35vh;
+    }
+
+    .pet-intro {
+        #t4 {
+            font-size: 42px;
+            color: #644844;
+            margin-top: -50vh;
+            margin-left: -32vh;
+        }
+
+        #t5 {
+            font-size: 30px;
+            color: #46593B;
+            margin-top: -40vh;
+            margin-left: 40vh;
+        }
+
+        #t6 {
+            font-size: 34px;
+            color: #1C2F4F;
+            margin-top: 45vh;
+            margin-left: -35vh;
+        }
+
+        #t7 {
+            font-size: 28px;
+            color: #2D1B17;
+            margin-top: 56vh;
+            margin-left: 27vh;
+        }
+    }
+
+    #pd1 {
+        height: 80vh;
+        z-index: 3;
+        margin-top: -5vh;
+    }
+
+    #p41 {
+        z-index: 5;
+        height: 30vh;
+    }
 }
